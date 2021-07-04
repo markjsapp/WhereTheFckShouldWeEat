@@ -1,5 +1,5 @@
 ## Where the Fuck Should We Eat?
-![video preview](https://gfycat.com/cluelessmeaslyagama-size_restricted.gif)
+![video preview](https://thumbs.gfycat.com/cluelessmeaslyagama-size_restricted.gif)
 
 For the full gif click [here](https://gfycat.com/cluelessmeaslyagama). 
 
