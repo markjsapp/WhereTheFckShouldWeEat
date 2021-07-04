@@ -1,5 +1,6 @@
 import './App.css';
-import React, {Component} from 'react';
+import React from 'react';
+import Footer from './components/footer';
 
 const restaurants = [
   {name: 'Chik-Fil-A'},
@@ -37,6 +38,15 @@ class App extends React.Component {
         <button type="button" onClick={this.onButtonClickHandler}>
           PICK SOMETHING FOR ME DAMMIT
         </button>
+        
+        <Footer>
+          <span>
+            |
+            <a href="https://www.buymeacoffee.com/markjsapp">Donate </a> | 
+            <a href="https://github.com/markjsapp">Github</a> |
+          </span>
+        </Footer>
+
       </div>
     );
   }
