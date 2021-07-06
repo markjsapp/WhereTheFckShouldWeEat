@@ -25,6 +25,7 @@ button:hover {
   padding: 25px;
   font-family:'Bebas Neue';
   font-size: 50px;
+  cursor: pointer;
 }
 
 p {

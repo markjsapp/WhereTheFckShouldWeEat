@@ -2,6 +2,7 @@ import './App.css';
 import React from 'react';
 import Footer from './components/footer';
 import {Card, ListGroup} from 'react-bootstrap';
+import Maps from './components/map';
 
 // Temp data 
 const restaurants = [
@@ -17,7 +18,7 @@ const restaurants = [
   {name: 'Olive Garden'}
   ]
 
-  // Calculating a random index 
+// Calculating a random index 
 const randIndex = Math.floor(Math.random() * restaurants.length);
 
 // Main 
@@ -46,23 +47,22 @@ class App extends React.Component {
         {this.state.showMessage && 
           <p>{this.state.place}
             <Card style={{ 
-              width: "60rem", 
               textAlign: "center", 
               paddingLeft: "115px", 
-              paddingRight: "115px"
+              paddingRight: "115px",
               }}>
-            <Card.Header style={{ 
-              fontSize: "30px",
-              color: "grey"
-            }}>Hours</Card.Header>
-            <ListGroup variant="flush">
-              <ListGroup.Item style={{ fontSize: "30px", color: "grey"}}>Monday: 8:00am - 10:00pm </ListGroup.Item>
-              <ListGroup.Item style={{ fontSize: "30px", color: "grey"}}>Tuesday: 8:00am - 10:00pm </ListGroup.Item>
-              <ListGroup.Item style={{ fontSize: "30px", color: "grey"}}>Wednesday: 8:00am - 10:00pm </ListGroup.Item>
-              <ListGroup.Item style={{ fontSize: "30px", color: "grey"}}>Thursday: 8:00am - 10:00pm</ListGroup.Item>
-              <ListGroup.Item style={{ fontSize: "30px", color: "grey"}}>Friday: 8:00am - 10:00pm</ListGroup.Item>
-            </ListGroup>
-          </Card>
+              <Card.Header style={{ 
+                fontSize: "30px",
+                color: "grey"
+              }}>Hours</Card.Header>
+              <ListGroup variant="flush">
+                <ListGroup.Item style={{ fontSize: "30px", color: "grey"}}>Monday: 8:00am - 10:00pm </ListGroup.Item>
+                <ListGroup.Item style={{ fontSize: "30px", color: "grey"}}>Tuesday: 8:00am - 10:00pm </ListGroup.Item>
+                <ListGroup.Item style={{ fontSize: "30px", color: "grey"}}>Wednesday: 8:00am - 10:00pm </ListGroup.Item>
+                <ListGroup.Item style={{ fontSize: "30px", color: "grey"}}>Thursday: 8:00am - 10:00pm</ListGroup.Item>
+                <ListGroup.Item style={{ fontSize: "30px", color: "grey"}}>Friday: 8:00am - 10:00pm</ListGroup.Item>
+              </ListGroup>
+            </Card>
           </p>
         }
         <button type="button" onClick={this.onButtonClickHandler} style={{margintop: "50px"}}>
@@ -74,7 +74,6 @@ class App extends React.Component {
             <a href="https://github.com/markjsapp">Github</a> 
           </span>
         </Footer>
-
       </div>
     );
   }
